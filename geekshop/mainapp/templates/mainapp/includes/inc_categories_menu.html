@@ -1,0 +1,8 @@
+<ul class="links-menu">
+    {% for link_item in links_menu %}
+    <li><a
+            href="{% url link_item.url %}"
+            {% if request.resolver_match.url_name== link_item.url %} class="active" {% endif %}
+    >{{ link_item.title }}</a></li>
+    {% endfor %}
+</ul>![](../../../../../../../../../../../var/folders/bg/bs_wl2l504d26fx158dsgn1m0000gn/T/TemporaryItems/NSIRD_screencaptureui_fE4gzc/Снимок экрана 2021-10-26 в 21.28.32.png)
